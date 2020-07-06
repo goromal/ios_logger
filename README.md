@@ -1,7 +1,7 @@
 # ios_logger
 Application for logging camera images, accelerometer and gyroscope data,  gps and heading data, motion data and magnet data. 
 
-This application was made for logging camera images and sensor data on Apple devices (iPad/iPhone).
+This application was made for logging camera images and sensor data on Apple devices (iPad/iPhone) and is particularly geared towards performing intrinsic/extrinsic calibrations for VIO applications.
 
 ## Build and run:
 1. Clone with ```git clone --recurse-submodules https://github.com/goromal/ios_logger.git```
@@ -12,7 +12,7 @@ This application was made for logging camera images and sensor data on Apple dev
   I suggest version 3.4.10.
 5. Connect your device (you may have to wait for the debugger to be set up), select it (Product -> Destination) and run application (Product -> Run)
 
-## Perform VIO Calibration on Your Device
+## Perform VIO Calibration for Your Device
 
 Open the app on your device:
 
