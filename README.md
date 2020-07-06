@@ -8,7 +8,7 @@ This application was made for logging camera images and sensor data on Apple dev
 2. In project properties -> General set your team signing and make sure that signing certificate was successfully created
 3. Download [OpenCV framework](https://sourceforge.net/projects/opencvlibrary/files/) and put it in project directory. 
   Or in project properties -> Build Settings -> Framework Search Paths add path to folder with OpenCV framework. 
-  I used 3.x version of OpenCV.
+  I suggest version 3.4.10.
 4. Connect your device (you may have to wait for the debugger to be set up), select it (Product -> Destination) and run application (Product -> Run)
 
 ## Collect datasets:
