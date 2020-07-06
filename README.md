@@ -4,28 +4,36 @@ Application for logging camera images, accelerometer and gyroscope data,  gps an
 This application was made for logging camera images and sensor data on Apple devices (iPad/iPhone).
 
 ## Build and run:
-1. Open ios_logger.xcodeproj in XCode
-2. In project properties -> General set your team signing and make sure that signing certificate was successfully created
-3. Download [OpenCV framework](https://sourceforge.net/projects/opencvlibrary/files/) and put it in project directory. 
+1. Clone with ```git clone --recurse-submodules https://github.com/goromal/ios_logger.git```
+2. Open ios_logger.xcodeproj in XCode
+3. In project properties -> General set your team signing and make sure that signing certificate was successfully created
+4. Download [OpenCV framework](https://sourceforge.net/projects/opencvlibrary/files/) and put it in project directory. 
   Or in project properties -> Build Settings -> Framework Search Paths add path to folder with OpenCV framework. 
   I suggest version 3.4.10.
-4. Connect your device (you may have to wait for the debugger to be set up), select it (Product -> Destination) and run application (Product -> Run)
+5. Connect your device (you may have to wait for the debugger to be set up), select it (Product -> Destination) and run application (Product -> Run)
 
-## Collect datasets:
-To start collecting dataset:
+## Perform VIO Calibration on Your Device
+
+Open the app on your device:
+
 * set required image resolution in upper-left corner
-* **if you check ARKit segment - app will use ARKit to get camera images (with ARKit native resolution - depends on device) + app will _logging ARKit poses of the device_ (with origin in place where "START" button was pressed)**
-* set switches with required sensors to be logged
+* **if you check ARKit segment - app will use ARKit to get camera images (with ARKit native resolution - depends on device) + app will _log ARKit poses of the device_ (with origin in place where "START" button was pressed)**
+* set switches with required sensors to be logged--_MUST_ at least include the IMU/Gyro sensors (toggled by default)
 * _you can set AutoFocus on/off with "AF" button_
 * _with off AutoFocus you can set camera focal lenth by slider in bottom-right corned_
 * press "START" button
-* when you want to stop collecting dataset press "STOP" :-)
+* when you want to stop collecting dataset press "STOP"
 
-Each dataset will be saved in separate folder on the device .
+Connect your device to a Mac via USB:
 
-## Get saved datasets:
-After you have collected datasets connect your device to PC and run iTunes. In iTunes go to device-> File Sharing -> ios-logger, in right table check folders with datasets you needed and save it on your PC. 
-In last versions of MacOS you should use finder to acess the device and get File Sharing.
+* Open device filesystem, select _Files_
+* Copy recorded dataset folder under the app section to your local machine (you can delete it off your device now to save space)
+
+Now, on a machine that runs ROS:
+
+* Clone this repository once again
+* Transfer over the dataset folder
+* ...
 
 ## Dataset format:
 * Accel.txt: time(s(from 1970)),ax(g-units),ay(g-units),az(g-units)
@@ -40,7 +48,7 @@ In last versions of MacOS you should use finder to acess the device and get File
 * Frames.txt: time(s),frameNumber,_focalLenghtX,focalLenghtY,principalPointX,principalPointY_
 * Frames.m4v: frames compressed in video 
 
-## Other:
+## Other: ----
 _To syncronize accelerometer and gyroscope data_ you can use python script sync-data.py:
 ```
 python path_to_folder_with_sync-data/sync-data.py path_to_datasets_folder/dataset_folder
