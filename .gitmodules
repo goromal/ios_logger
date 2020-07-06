@@ -1,0 +1,3 @@
+[submodule "ros/src/kalibr"]
+	path = ros/src/kalibr
+	url = https://github.com/ethz-asl/kalibr.git

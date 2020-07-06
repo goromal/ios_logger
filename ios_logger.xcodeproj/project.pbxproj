@@ -17,6 +17,7 @@
 		0438792621344EBB0004FA3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438792521344EBB0004FA3E /* UIKit.framework */; };
 		0438792821344EC30004FA3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438792721344EC30004FA3E /* CoreLocation.framework */; };
 		0438792A21344ECA0004FA3E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438792921344ECA0004FA3E /* CoreMotion.framework */; };
+		49159B7E24B2C03D00E1CE85 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49159B7D24B2C03D00E1CE85 /* ARKit.framework */; };
 		E6079DCA21A6D8AF0079A3C8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6079DC921A6D8AF0079A3C8 /* Accelerate.framework */; };
 		E6079DCC21A6D8B40079A3C8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6079DCB21A6D8B40079A3C8 /* AssetsLibrary.framework */; };
 		E6079DCE21A6D8BA0079A3C8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6079DCD21A6D8BA0079A3C8 /* AVFoundation.framework */; };
@@ -30,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0438790921343D060004FA3E /* ios logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0438790921343D060004FA3E /* VIO Sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIO Sensors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0438790C21343D060004FA3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0438790D21343D060004FA3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0438790F21343D060004FA3E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		0438792521344EBB0004FA3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0438792721344EC30004FA3E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0438792921344ECA0004FA3E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		49159B7D24B2C03D00E1CE85 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		E6079DC921A6D8AF0079A3C8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		E6079DCB21A6D8B40079A3C8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E6079DCD21A6D8BA0079A3C8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +66,7 @@
 				E6079DDA21A6DAD30079A3C8 /* CoreMedia.framework in Frameworks */,
 				E6079DD821A6D8EA0079A3C8 /* Foundation.framework in Frameworks */,
 				E6079DD621A6D8D90079A3C8 /* QuartzCore.framework in Frameworks */,
+				49159B7E24B2C03D00E1CE85 /* ARKit.framework in Frameworks */,
 				E6079DD421A6D8D20079A3C8 /* CoreVideo.framework in Frameworks */,
 				E6079DD221A6D8CB0079A3C8 /* CoreImage.framework in Frameworks */,
 				E6079DD021A6D8C30079A3C8 /* CoreGraphics.framework in Frameworks */,
@@ -93,7 +96,7 @@
 		0438790A21343D060004FA3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0438790921343D060004FA3E /* ios logger.app */,
+				0438790921343D060004FA3E /* VIO Sensors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +120,7 @@
 		0438792221344EAB0004FA3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49159B7D24B2C03D00E1CE85 /* ARKit.framework */,
 				E6A91C9B224B6A1A00CBC60D /* opencv2.framework */,
 				E6079DD921A6DAD30079A3C8 /* CoreMedia.framework */,
 				E6079DD721A6D8EA0079A3C8 /* Foundation.framework */,
@@ -152,7 +156,7 @@
 			);
 			name = ios_logger;
 			productName = cig_logger;
-			productReference = 0438790921343D060004FA3E /* ios logger.app */;
+			productReference = 0438790921343D060004FA3E /* VIO Sensors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -348,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 73FQ4X36ML;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = ios_logger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
@@ -357,8 +361,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "idn.ios-logger";
-				PRODUCT_NAME = "ios logger";
+				PRODUCT_BUNDLE_IDENTIFIER = "idn.ios-logger-LTS";
+				PRODUCT_NAME = "VIO Sensors";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -368,7 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 73FQ4X36ML;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				INFOPLIST_FILE = ios_logger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
@@ -377,8 +381,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "idn.ios-logger";
-				PRODUCT_NAME = "ios logger";
+				PRODUCT_BUNDLE_IDENTIFIER = "idn.ios-logger-LTS";
+				PRODUCT_NAME = "VIO Sensors";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
