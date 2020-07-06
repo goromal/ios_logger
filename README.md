@@ -14,6 +14,8 @@ This application was made for logging camera images and sensor data on Apple dev
 
 ## Perform VIO Calibration for Your Device
 
+First, load up the calibration checkerboard, located in **calib_assets/april_6x6_80x80cm_A0.pdf**.
+
 Open the app on your device:
 
 * set required image resolution in upper-left corner
@@ -22,6 +24,7 @@ Open the app on your device:
 * _you can set AutoFocus on/off with "AF" button_
 * _with off AutoFocus you can set camera focal lenth by slider in bottom-right corned_
 * press "START" button
+* ...(TODO describe desired calibration motion/length)...
 * when you want to stop collecting dataset press "STOP"
 
 Connect your device to a Mac via USB:
@@ -33,7 +36,7 @@ Now, on a machine that runs ROS:
 
 * Clone this repository once again
 * Transfer over the dataset folder
-* ...
+* ...TODO
 
 ## Dataset format:
 * Accel.txt: time(s(from 1970)),ax(g-units),ay(g-units),az(g-units)
